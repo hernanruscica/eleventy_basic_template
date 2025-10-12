@@ -1,0 +1,55 @@
+---
+layout: layoutProject.njk
+projectIndex: 1
+summary:    
+  subtitle: "Puntos importantes del proyecto"
+  links:
+    - href: "#caracteristicas"
+      text: "caracteristicas"
+    - href: "#imagenes"
+      text: "imagenes"
+    - href: "#habilidades"
+      text: "habilidades"
+    - href: "#tecnologias"
+      text: "tecnologias"   
+---
+
+{% include "showProjectHeader.njk" %}
+
+{% set title =  projects.list[projectIndex].title  %}
+{% include "indexSummary.njk" %}
+
+{% set images = projects.list[projectIndex].images  %}
+{% include "portfolioSlider.njk" %}
+
+<section class="section" id="proyecto_contenido">
+
+  <h3 class="title2" id="{{ summary.links[0].text }}"> {{ summary.links[0].text }} </h3>    
+
+  <p>  
+    <strong>'Proyecto 1'</strong> es un proyecto de ejemplo inexistente, creado para ilustrar la estructura y el formato de un portafolio profesional.
+  </p>  
+   <p>  
+    Posee 4 secciones principales: <strong>Características</strong>, <strong>Imágenes</strong>, <strong>Habilidades</strong> y <strong>Tecnologías</strong>.</br>
+    Cada sección está diseñada para proporcionar una visión completa del proyecto; los titulos de las se pueden cambiar, modificando los 
+    valores de las variables en el bloque 'summary' al inicio de este archivo, cada 'link', representa una sección y tiene dos propiedades: 'href' y 'text'.</br>
+    - 'href' define el identificador de la sección, que se utiliza para la navegación interna.</br>
+    - 'text' define el título visible de la sección.
+  </p>  
+  
+  <h3 class="title2" id="{{ summary.links[2].text }}"> {{ summary.links[2].text }} </h3>
+
+  <p>
+    Las habilidades desarrolladas durante este proyecto.
+  </p>
+  
+  <h3 class="title2" id="{{ summary.links[3].text }}"> {{ summary.links[3].text }} </h3>
+
+  <p>Las tecnologias usadas en el proyecto</p>
+  <ul>
+    <li><strong>tecnologia 1:</strong> Descripcion de la tenologia 1 usada en el proyecto.</li>
+    <li><strong>tecnologia 1:</strong> Descripcion de la tenologia 1 usada en el proyecto.</li>
+    
+  </ul>  
+
+</section>

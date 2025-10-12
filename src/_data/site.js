@@ -1,5 +1,5 @@
 export default {
-    baseURL: "https://ejemplo.com",
+    baseURL: "http://localhost:7777",
     name: "Mi Sitio Web",
     description: "Descripción del sitio web.",
     keywords: "Palabra Clave 1, Palabra Clave 2, Portfolio",
@@ -39,6 +39,8 @@ export default {
         photo: "profile.webp",
         bio: "Una breve biografía sobre ti.",
         url: "https://ejemplo.com",
+        githubLink: "https://github.com/githubusername",
+        linkedinLink: "https://www.linkedin.com/in/linkedinusername/",
         telephone: "+1234567890",
         whatsappPhone: "1234567890",
         email: "usuario@ejemplo.com",
