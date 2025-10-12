@@ -1,49 +1,48 @@
 export default {
-    //baseURL: "http://localhost:7777",
-    baseURL: "https://ruscica.com.ar",
-    name: "ruscica.com.ar",        
-    description: "Sitio web de Cesar Ruscica - Desarrollador Web Full Stack",
-    keywords: "Cesar Ruscica, Ruscica, Desarrollador Web, Full Stack, JavaScript, Node.js, React, HTML, CSS, Portfolio",    
-    url: "https://ruscica.com.ar",
-    twitterHandle: "ruscica.com.ar",
+    baseURL: "https://ejemplo.com",
+    name: "Mi Sitio Web",
+    description: "Descripción del sitio web.",
+    keywords: "Palabra Clave 1, Palabra Clave 2, Portfolio",
+    url: "https://ejemplo.com",
+    twitterHandle: "@usuario",
     sections: [{name: "Inicio", url: "/"}, {name: "Proyectos", url: "/proyectos"}, 
-        {name: "Curriculum Vitae", url: "/cv"}, /*{name: "Enlaces", url: "/enlaces"}*/],
+        {name: "Curriculum Vitae", url: "/cv"}],
     socials: [   
         {   
             name: "email",         
-            text: "Mi correo electronico",
-            url: "cesarhernanruscica@gmail.com",
+            text: "Correo electronico",
+            url: "usuario@ejemplo.com",
             icon: "envelope.svg"
         },       
         {   
             name: "linkedin",         
-            text: "Mi perfil de LinkedIn",
-            url: "https://www.linkedin.com/in/cesar-hernan-ruscica/",
+            text: "Perfil de LinkedIn",
+            url: "https://www.linkedin.com/in/usuario/",
             icon: "linkedin.svg"
         },  
         {   
             name: "github",         
-            text: "Mi perfil en GitHub",
-            url: "https://github.com/hernanruscica",
+            text: "Perfil en GitHub",
+            url: "https://github.com/usuario",
             icon: "github.svg"
         },  
         {   
             name: "website",         
-            text: "Mi Sitio web",
-            url: "https://ruscica.com.ar",
+            text: "Sitio web",
+            url: "https://ejemplo.com",
             icon: "globe.svg"
         },  
     ],
     author: {
-        name: "Cesar Ruscica",
-        title: "Desarrollador Web Full Stack",
+        name: "Nombre Apellido",
+        title: "Título Profesional",
         photo: "profile.webp",
-        bio: "👨‍💻 Desarrollador Web Full Stack. Mi stack principal es JavaScript. Puedo desarrollar proyectos funcionales desde cero. Transformo necesidades digitales en soluciones efectivas. Apasionado por la tecnología y el aprendizaje continuo.",
-        url: "https://ruscica.com.ar",
-        telephone: "+5411 3292 4558",
-        whatsappPhone: "541132924558",
-        email: "cesarhernanruscica@gmail.com",
-        address: "Buenos Aires, Argentina",
+        bio: "Una breve biografía sobre ti.",
+        url: "https://ejemplo.com",
+        telephone: "+1234567890",
+        whatsappPhone: "1234567890",
+        email: "usuario@ejemplo.com",
+        address: "Ciudad, País",
     },
     
     tecnologies: [
