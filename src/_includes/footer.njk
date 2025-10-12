@@ -1,0 +1,26 @@
+<footer class="footer no-print">            
+    <div class="copyright">
+        <h3 class="title2">Diseño y programacion</h3>
+        <p >
+            Este sitio web fue diseñado y programado por Cesar Hernan Ruscica en el año 2025. 
+            Usando Figma, CSS3, HTML5 y algo de JavaScript. Con el motor de Eleventy              
+        </p>    
+        <img class="copyright_image" src="/assets/images/by-sa.svg" alt="Logo de la licencia Creative Commons BY-SA" title="Creative Commons BY-SA"> 
+        <p>
+            Distribuido en mi GitHub, bajo la licencia de https://creativecommons.org/licenses/by-sa/3.0/igo/</br>
+            Iconos de <a href="https://lucide.dev/">lucide</a> Bajo licencia MIT.
+        </p>      
+    </div>
+    <div class="footer_contact">            
+        <h3 class="title2">Contacto</h3>
+        {% include "socialNavBar.njk" %}        
+    </div>
+    <div class="floating-buttons">
+        <a href="#" class="scroll-to-top-button" aria-label="Ir arriba" title="Ir arriba">
+            <img src="/assets/icons/arrowUpFromPoint.svg" title="Ir arriba" alt="Ir arriba">
+        </a>
+        <a href="https://wa.me/{{ site.author.whatsappPhone }}" target="_blank" rel="noopener noreferrer" class="whatsapp-button" aria-label="Enviar mensaje de WhatsApp">
+            <img src="/assets/images/whatsapp-light.svg" alt="WhatsApp" title="Enviar mensaje de WhatsApp">
+        </a>
+    </div>    
+</footer>

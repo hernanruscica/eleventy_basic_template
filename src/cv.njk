@@ -1,0 +1,212 @@
+---
+layout: layoutcv
+---
+
+  <header class="cv-header">
+      <figure class="profile_image">
+          <img src="{{ site.baseURL }}/assets/images/{{ site.author.photo }}" alt="Una fotografía profesional de {{ site.author.name }}" title="Una fotografía profesional de {{ site.author.name }}">
+      </figure>                
+      <div class="cv-header-content">
+        <h1> {{ site.author.name }} </h1>
+        <ul class="contact-info">
+            <li> {{ site.author.address }} </li>
+            <li><a href="{{ site.socials[1].url }}" class="link" target="_blank" rel="noopener noreferrer">{{ site.socials[1].url }}</a></li>
+            <li><a href="tel:{{ site.author.telephone }}"  class="link" >{{ site.author.telephone }}</a></li>
+            <li><a href="mailto:{{ site.author.email }}"  class="link" >{{ site.author.email }}</a></li>
+            <li><a href="{{ site.url }}"  class="link"  target="_blank" rel="noopener noreferrer">{{ site.url }}</a></li>                  
+            <a href="bajar" id="download-cv" class="btnCTA no-print">Descargar CV</a>  
+            <p class="paragraph_subtitle no-print" >[CTRL+P] para imprimir o descargar.</p>
+        </ul>
+      </div>
+  </header> 
+
+  <section class="cv-summary">
+    <h2>Perfil</h2>
+      <p>
+        Desarrollador web con experiencia en backend (Node.js, Express, MySQL, PostgreSQL, JWT, Sequelize) y frontend (HTML, CSS, JavaScript, React.js).
+        Especializado en llevar proyectos desde los requerimientos hasta su puesta en producción. Trabajo colaborativo con Git/GitHub.
+        Inglés intermedio y constante capacitación en nuevas tecnologías.
+      </p>
+  </section>
+
+  <section class="cv-experience">
+      <h2>Experiencia profesional</h2>
+      
+      <article class="job">
+          <div class="job-header">                    
+              <h3>Desarrollador full-stack (part-time) - Mdv Srl. </h3>
+              <p class="job-location-date">Buenos Aires, Argentina | Noviembre 2023 – Actualidad</p>
+          </div>
+          <ul class="job-duties">
+              <li>Desarrollo integral del backend para la plataforma principal de IoT utilizando Node.js y bases de datos relacionales (MySQL), soportando la gestión completa del ciclo de vida de usuarios, clientes y dispositivos.</li>
+              <li>Diseño e implementación de APIs RESTful para garantizar una comunicación eficiente y segura entre el frontend, el backend y la flota de dataloggers desplegados.</li>
+              <li>Ingeniería de un sistema de ingesta de datos en tiempo real, procesando y almacenando telemetría de decenas de dispositivos IoT de forma concurrente y escalable.</li>                    
+          </ul>
+      </article> 
+
+      <article class="job">
+          <div class="job-header">                    
+              <h3>Analista de soporte técnico y operaciones - Secretaría de Trabajo de la Nación. </h3>
+              <p class="job-location-date">Buenos Aires, Argentina | Abril 2022 – Abril 2024</p>
+          </div>
+          <ul class="job-duties">
+              <li>Actué como nexo clave entre los usuarios finales y el equipo de desarrollo dentro de la Dirección de Servicios Tecnológicos, facilitando el ciclo de vida de resolución de software.</li>
+              <li>Gestioné la documentación, replicación y clasificación de bugs y solicitudes de mejora, asegurando que los desarrolladores recibieran informes de alta calidad para agilizar los tiempos de corrección.</li>
+              <li>Analicé y diagnostiqué incidentes complejos reportados por cientos de usuarios internos en una amplia gama de sistemas propietarios y aplicaciones de terceros, identificando la causa raíz de los problemas.</li>                    
+              <li>Proporcioné soporte técnico de Nivel 2, resolviendo solicitudes de alta prioridad y escalando eficientemente los problemas críticos a los equipos de desarrollo o infraestructura correspondientes.</li>
+          </ul>
+      </article>           
+
+  </section>
+
+  <h2>Educación</h2>
+  <section class="cv-education">
+
+
+      <article>
+          <h3>Curso de Laravel Profesional</h3>
+          <h4>GOGODEV By Juanjo Ruiz</h4>
+          <p class="education-location-date">España | Junio 2025 - Actualidad</p>
+          <p>Curso de más de 50 horas con detalle en varios de los aspectos de Laravel, usando tanto MVC como DDD, EDD y microservicios.</p>
+          <p class="no-print">
+              Entrando en profundidad en todos y cada uno de los aspectos de esta tecnología: rutas, controladores, middleware, vistas, migraciones, 
+              seeders, factories, canales de mensajería y escucha, inertia, livewire, blade, eventos, custom validations, forge, vapor, testing y passport.
+          </p>
+          <a href="https://www.youtube.com/playlist?list=PLDllzmccetSM50U0Y9fTOWHvSzAZ_W6Il" class="link no-print"  target="_blank" rel="noopener noreferrer">Curso Completo Online</a>
+      </article>            
+
+      <article>
+          <h3>Simulaciones laborales</h3>
+          <h4>No Country y Igrowker</h4>
+          <p class="education-location-date">Online | 2024 - 2025 </p>
+          <p>Desde 2024, he participado en simulaciones laborales: cuatro con No Country y una con Igrowker, desempeñando roles tanto de frontend como de backend.</p>
+          <p class="no-print">
+            Estas simulaciones me permitieron mejorar habilidades blandas indispensables para el trabajo en equipo. También me aportaron nuevos contactos de valor, así como la capacidad de trabajar con tecnologías que no conocía, para las cuales tuve que documentarme rápidamente.
+          </p>
+          <p>Ejemplo de un proyecto de No Country: <a href="/proyectos/haru" class="link"  target="_blank" rel="noopener noreferrer">{{ site.baseURL }}/proyectos/haru</a>
+          </p>
+      </article>   
+
+      <article>
+          <h3>POO en Python</h3>
+          <h4>Plan de Formación Profesional y Continua. Ministerio de Trabajo, certificado por Alkemy</h4>
+          <p class="education-location-date">Online | Abril 2024 </p>
+          <p>Bootcamp donde pude aprender los fundamentos de la programacion orientada a objetos en pytho, usando Django. 64 hs del IT Bootcamp</p>                
+          <a href="https://github.com/hernanruscica/python_POO_Alkemy" class="link no-print"  target="_blank" rel="noopener noreferrer">Repositorio ejercicios</a>
+          <a href="/assets/documents/Python-trabajo-certificado.pdf" class="link no-print" download>Certificado de finalización</a>
+          </p>
+      </article>   
+
+
+      <article>
+        <h3>React.js</h3>
+        <h4>Agencia de Aprendizaje a lo Largo de la Vida - Gob. de la  C.A.B.A. Codo a Codo 4.0</h4>
+        <p class="education-location-date">Buenos Aires, Argentina | Julio 2023 </p>
+        <p>
+          Duración de la cursada: 208 horas de reloj, distribuidas en 20 semanas.</p>
+          <p class="no-print">
+          Curso introductorio a React.js donde aprendí conceptos fundamentales de la reactividad, trabajo con endpoints y asincronía.
+          Como resultado de la cursada, creamos una aplicación en grupo que me ayudó a afianzar lo aprendido.
+          Esta aplicación permitía consultar el endpoint de yts.mx y themoviedb para buscar películas, por nombre, género, etc. 
+          Se crearon tres páginas con varios componentes que permitían buscar y mostrar géneros y/o películas. 
+        </p>
+        <a href="/assets/documents/react-certificado-28470361.pdf" class="link no-print" download>Certificado de finalización</a>
+      </article> 
+      <article>
+        <h3>Diseño UX/UI</h3>
+        <h4>Agencia de Aprendizaje a lo Largo de la Vida - Gob. de la  C.A.B.A. Codo a Codo 4.0</h4>
+        <p class="education-location-date">Buenos Aires, Argentina | Julio 2023 </p>
+        <p>
+          Duración de la cursada: 208 horas de reloj, distribuidas en 20 semanas.</p>
+          <p class="no-print">
+          Curso introductorio al diseño UX/UI. Algunos de los contenidos: 
+          </p>
+          <p>
+          <strong>UX Research</strong>, Benchmarking, User Persona, MVP, StoryTelling, arquitectura de la información, prototipado, pruebas de usabilidad,
+          UI kit, Atomic Design. 
+        </p>
+        <a href="/assets/documents/DisenioUXUI-plan.pdf" class="link no-print" download>Plan de estudios</a>
+        <a href="/assets/documents/uxui-certificado-28470361.pdf" class="link no-print" download>Certificado de finalización</a>
+      </article> 
+
+      <article>
+        <h3>Curso de "Programador"</h3>
+        <h4>Dirección General de Educación Técnica y Formación Profesiona - Cordoba, Argentina</h4>
+        <p class="education-location-date">Cordoba, Argentina | Octubre 2023 </p>
+        <p>
+          realizado y aprobado el curso de "Programador" (M.R. Resolución CFE Nº 289/16 Anexo I), dictado en sede
+            Instituto Superior Politécnico Córdoba, con una duración total de trescientos sesenta y cuatro horas
+            reloj (364 Horas).
+        </p>     
+        <a href="https://www.ispc.edu.ar" class="link no-print" target="_blank" rel="noopener noreferrer">https://www.ispc.edu.ar</a>
+        <a href="/assets/documents/1789-17.pdf" class="link no-print" download>Certificado de finalización</a>
+      </article> 
+
+      <article>
+        <h3>Programing Essentials in Python</h3>
+        <h4>Cisco Networking Academy y el Instituto Superior Politécnico Córdoba,</h4>
+        <p class="education-location-date">Cordoba, Argentina | Abril 2023 </p>
+        <p>
+          Duración de la cursada: 75 horas de reloj, modalidad online, dictado por Cisco Networking Academy y Certificado por el Ministerio de educacion de Cordoba
+        </p>     
+        <a href="https://github.com/hernanruscica/practicasPython" class="link no-print" target="_blank" rel="noopener noreferrer">Repositorio con los ejercicios</a>
+        <a href="/assets/documents/Python-Cisco-Certificado.pdf" class="link no-print" download>Certificado de finalización</a>
+      </article> 
+
+      <article>
+        <h3>Desarrollo Web - JS - Node.js</h3>
+        <h4>Agencia de Aprendizaje a lo Largo de la Vida - Gob. de la  C.A.B.A. Codo a Codo 4.0</h4>
+        <p class="education-location-date">Buenos Aires, Argentina | Diciembre 2022 </p>
+        <p>
+          Duración de la cursada: 208 horas de reloj, distribuidas en 20 semanas.</p>
+        <p class="no-print">
+          Curso introductorio al desarrollo web con JavaScript. Algunos de los contenidos: 
+        </p>
+        <p>
+          HTML5, CSS3, Bootstrap, JavaScript, Git Flow, Servidores, bases de datos MySQL.
+        </p>
+        <p class="no-print">
+          Como demostración de conocimientos de este curso, desarrollé una agenda de contactos (disponible en este enlace): 
+          <a href="/proyectos/agendacac" class="link">{{ site.url }}/proyectos/agendacac</a>
+          donde diseñé la UI en Figma, el backend con Node.js y el frontend con Bootstrap.
+        </p>              
+        <a href="/assets/documents/node-fullstack-certificado-28470361.pdf" class="link no-print" download>Certificado de finalización</a>
+      </article>   
+
+      <article>
+        <h3>Algoritmos y Estructuras de Datos en JavaScript</h3>
+        <h4>FreeCodeCamp</h4>
+        <p class="education-location-date">Online | Noviembre 2021 </p>
+        <p>
+          Curso de aproximadamente 300 horas de reloj.</p>              
+        <p >
+          En esta Certificación de Algoritmos y Estructuras de Datos de JavaScript, aprenderás los fundamentos de JavaScript como variables, arrays, objetos, bucles, funciones, el DOM y más.
+        </p>
+        <p class="no-print">
+        También aprenderás sobre Programación Orientada a Objetos (POO), Programación Funcional, pensamiento algorítmico, cómo trabajar con el almacenamiento local y cómo obtener datos usando una API.
+        </p>
+                      
+        <a href="https://www.freecodecamp.org/certification/chruscica/javascript-algorithms-and-data-structures" class="link no-print"  target="_blank" rel="noopener noreferrer">Certificado de finalización</a>
+      </article>             
+  </section>
+
+  <section class="cv-skills">
+    <article>
+      <h2>Habilidades adicionales</h2>            
+      <p>
+          - Trabajo en equipo con metodologías ágiles y experiencia en Git y GitHub.</br>
+          - Comunicación asertiva. </br>
+          - Base académica sólida.</br>
+          - Metodología profesional: análisis de requisitos → prototipado → desarrollo → QA</br>
+          - Inglés escrito y técnico: muy bueno. Inglés hablado: intermedio.   </br>              
+      </p>   
+      </article>         
+  </section> 
+
+
+<script>
+  document.getElementById('download-cv').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.print();
+  });
+</script>

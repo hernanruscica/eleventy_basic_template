@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "eleventy": "^1.0.7"
+  },
+  "type": "module",
+  "name": "ruscica.com.ar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm install @11ty/eleventy --save-dev",
+    "start": "eleventy --serve --port=7777",
+    "clean": "rm -rf public",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "Cesar Hernan Ruscica",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

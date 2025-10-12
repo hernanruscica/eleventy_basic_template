@@ -1,0 +1,41 @@
+/* --- Importación de las librerías (puedes descargarlas o usar un CDN) --- */
+@import url('https://unpkg.com/swiper/swiper-bundle.min.css');
+@import url('https://unpkg.com/basiclightbox@5.0.4/dist/basicLightbox.min.css');
+
+/* --- Estilos para tu slider --- */
+.portfolio-slider {
+    width: 94vw; 
+    max-width: 800px;  
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.portfolio-slider h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 500px; /* Altura de tu slider, ajústala a tu gusto */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1; /* Un fondo mientras carga la imagen */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el slide sin deformarse */
+    cursor: pointer;
+}
+
+/* Opcional: Personalizar los colores de las flechas de Swiper */
+:root {
+    --swiper-theme-color: #D9822B; /* Usa tu color naranja */
+}

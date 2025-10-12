@@ -1,0 +1,22 @@
+<section class="portfolio-slider">
+    <h2 class="title2" id="imagenes">imagenes</h2>
+
+    <!-- Contenedor principal de Swiper -->
+    <div class="swiper">
+        <!-- Wrapper requerido por Swiper para los slides -->
+        <div class="swiper-wrapper">
+            {% for image in images %}
+            <div class="swiper-slide">
+                <a href="/assets/images/projects/{{ image.big }}">
+                    <img src="/assets/images/projects/{{ image.small }}" alt="Captura de pantalla del proyecto">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Botones de Navegación de Swiper -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+</section>

@@ -1,0 +1,61 @@
+{% include "head.njk" %}
+
+  <link rel="stylesheet" href="{{ site.baseURL }}/assets/styles/portfolioSlider.css">
+  {% if styles %}
+    {% for css in styles %}
+      <link rel="stylesheet" href="{{ site.baseURL }}/assets/styles/{{ css }}.css">
+    {% endfor %}
+  {% endif %}
+</head>
+<body>
+  {% include "headerEmpty.njk" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  {% include "footer.njk" %} 
+ 
+  <script src="/assets/scripts/main.js"></script>
+  <!-- Pon esto justo antes de cerrar tu etiqueta </body> -->
+<!-- Incluir las librerías desde un CDN -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+
+<script>
+    // --- 1. Inicializar Swiper.js ---
+    const swiper = new Swiper('.swiper', {
+        // Queremos ver un solo slide a la vez
+        slidesPerView: 1,
+        spaceBetween: 30, // Espacio entre slides si decides mostrar más de uno
+
+        // Activar los botones de navegación
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Hacerlo "loop" para que sea infinito
+        loop: true,
+
+        // Activar el control por teclado
+        keyboard: true,
+    });
+
+    // --- 2. Activar basicLightbox ---
+    // Seleccionamos todos los slides que contienen un enlace
+    const slides = document.querySelectorAll('.swiper-slide a');
+
+    // Por cada slide, le añadimos un evento de click
+    slides.forEach(slide => {
+        slide.onclick = (e) => {
+            // Prevenimos que el navegador vaya al enlace
+            e.preventDefault();
+
+            // Creamos la instancia del lightbox con el contenido del enlace (la imagen grande)
+            basicLightbox.create(`
+                <img src="${slide.href}" style="max-width: 90vw; max-height: 90vh;">
+            `).show();
+        };
+    });
+</script>
+</body>
+</html>

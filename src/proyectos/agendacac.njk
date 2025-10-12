@@ -1,0 +1,84 @@
+---
+layout: layoutProject.njk
+projectIndex: 6
+summary:  
+  title: "Agenda de contactos - proyecto Fullstack"
+  subtitle: "Puntos importantes del proyecto"
+  links:
+    - href: "#caracteristicas"
+      text: "caracteristicas"
+    - href: "#imagenes"
+      text: "imagenes"
+    - href: "#habilidades"
+      text: "habilidades"
+    - href: "#tecnologias"
+      text: "tecnologias"   
+---
+
+{% include "showProjectHeader.njk" %}
+
+{% include "indexSummary.njk" %}
+
+{% set images = projects.list[projectIndex].images  %}
+{% include "portfolioSlider.njk" %}
+
+<section class="section" id="proyecto_contenido" >
+
+  <h3 class="title2"  id="{{ summary.links[0].text }}">📝 {{ summary.links[0].text }} </h3>    
+
+  <p>  
+    Esta <strong>Agenda de Contactos</strong> es un proyecto de desarrollo <strong>Fullstack</strong> que incluye un sistema de <strong>login</strong>. Fue construido utilizando <strong>MySQL</strong>, <strong>Node.js</strong>, el motor de plantillas <strong>EJS</strong> y <strong>Bootstrap</strong> para el diseño.
+  </p>  
+  <p>
+    Este proyecto fue creado como trabajo práctico integrador para el curso <strong>Codo a Codo 4.0 (Edición 2022)</strong>, donde se abordaron conceptos de desarrollo web Fullstack orientado a JavaScript, cubriendo tanto el <strong>frontend</strong> como el <strong>backend</strong>.
+  </p>
+  <p>Funcionalidades principales de la aplicación:</p>
+  <ul>
+    <li>👤 <strong>Registro de usuarios:</strong> Permite a cada usuario tener su propia agenda de contactos personal.</li>
+    <li>🔑 <strong>Restablecimiento de contraseña:</strong> En caso de olvido, el usuario puede recuperar el acceso a su cuenta.</li>
+    <li>➕ <strong>Agregar contactos:</strong> Se pueden añadir nuevos contactos con datos como nombre, apellido, teléfono, correo y foto.</li>
+    <li>✏️ <strong>Editar contactos:</strong> Permite corregir o actualizar la información de los contactos existentes.</li>
+    <li>🗑️ <strong>Eliminar contactos:</strong> Opción para borrar contactos que ya no son necesarios.</li>
+    <li>🔍 <strong>Búsqueda:</strong> Facilita la búsqueda de contactos por nombre y/o apellido.</li>
+  </ul>
+  <p>
+    En términos generales, esta aplicación es un <strong>CRUD</strong> básico que utiliza una base de datos <strong>MySQL</strong> con dos tablas: una para usuarios y otra para contactos. El backend está desarrollado con <strong>Node.js</strong> y <strong>Express</strong>, y se encuentra alojado en <strong>Render.com</strong>. La base de datos y las imágenes están en un servidor propio.
+  </p>
+   <p>
+    La arquitectura implementada es <strong>MVC (Modelo-Vista-Controlador)</strong>, con los modelos, vistas y controladores organizados en directorios separados. A su vez, los módulos están divididos para manejar la lógica de usuarios y contactos de forma independiente.
+  </p>
+   <p>
+    Para mejorar la seguridad, se utiliza el módulo <strong>bcrypt</strong> para encriptar las contraseñas de los usuarios en la base de datos. Además, cuenta con una funcionalidad de restablecimiento de contraseña que envía un correo electrónico al usuario con un enlace para cambiarla, utilizando el módulo <strong>Nodemailer</strong>.
+  </p>
+    
+
+  <h3 class="title2" id="{{ summary.links[2].text }}">🛠️ {{ summary.links[2].text }} </h3>
+
+  <p>  
+    En cuanto a las habilidades que utilicé en este proyecto, destaco las siguientes:
+  </p>
+  <ul>
+    <li>
+      <strong>🎨 Diseño de interfaz de usuario (UI):</strong> Utilicé <strong>Figma</strong> para el diseño integral de la interfaz gráfica. Esto me permitió definir las páginas necesarias y las funciones para el backend. Puedes ver el <a href="https://www.figma.com/file/eeiidyltU6h7gC1VL3r0wj" class="link no-print" target="_blank" rel="noopener noreferrer">diseño en Figma</a>.
+    </li>
+    <li>
+      <strong>🗃️ Diseño de la Base de Datos:</strong> Se crearon dos tablas (usuarios y contactos) relacionando los contactos con cada usuario, lo que permite múltiples usuarios y garantiza la seguridad de los datos. Se implementaron las operaciones <strong>CRUD</strong> necesarias en los modelos.
+    </li>
+    <li>
+      <strong>📄 Plantillas EJS y Bootstrap:</strong> La aplicación es monolítica, con el backend y el frontend en el mismo servidor. Utilicé el motor de plantillas <strong>EJS</strong> para administrar las vistas y <strong>Bootstrap</strong> para los estilos y el maquetado.
+    </li>
+    <li>
+      <strong>🏗️ Arquitectura MVC con Node:</strong> La arquitectura <strong>MVC</strong> mantiene el código organizado, separando los modelos, las vistas y los controladores en diferentes directorios. Los módulos también están divididos para manejar la lógica de usuarios y contactos de forma independiente.
+    </li>
+  </ul>
+ 
+
+  <h3 class="title2" id="{{ summary.links[3].text }}">🚀 {{ summary.links[3].text }} </h3>
+  <p>  
+    Para el desarrollo de esta aplicación, utilicé una variedad de tecnologías y herramientas que me permitieron crear una experiencia de usuario atractiva y funcional. Entre las principales tecnologías que empleé se encuentran: <strong>Node.js</strong>, <strong>Bootstrap</strong>, <strong>MySQL</strong>, plantillas <strong>EJS</strong>, <strong>bcrypt</strong>, <strong>Axios</strong> y <strong>Nodemailer</strong>.
+  </p>
+
+
+  
+
+</section>

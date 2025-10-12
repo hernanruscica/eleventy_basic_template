@@ -1,0 +1,39 @@
+<!-- header starts -->    
+<header class="header">
+    <!-- main nav starts -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/" class="link">Cesar Ruscica</a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <img src="{{ site.baseURL }}/assets/icons/hamburguer.svg" class="icon-open" alt="Abrir menú">
+                <img src="{{ site.baseURL }}/assets/icons/squarex.svg" class="icon-close" alt="Cerrar menú">
+            </button>
+            <ul class="nav-links">
+                {% for section in site.sections %}
+                    <li class="link">
+                        <a href="{{ section.url }}" class="links">{{ section.name }}</a>
+                    </li>
+                {% endfor %}  
+            </ul>
+        </div>
+    </nav> 
+    <!-- main nav starts -->  
+    <div class="header-main-content">
+        <figure class="profile_image">
+            <img src="{{ site.baseURL }}/assets/images/{{ site.author.photo }}" alt="Una fotografía profesional de {{ site.author.name }}" title="Una fotografía profesional de {{ site.author }}">
+        </figure>
+        <div class="header_contenido">
+            <h1 class="title">{{ site.author.name }}</h1>           
+            <h2  class="paragraph_subtitle">
+                {{ site.author.title }}
+            </h2>
+            {% include "socialNavBar.njk" %}
+            <p>
+                {{ site.author.bio }}
+            </p>
+
+        </div>
+    </div>
+        
+</header>
+<!-- header ends -->

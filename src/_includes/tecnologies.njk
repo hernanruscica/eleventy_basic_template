@@ -1,0 +1,20 @@
+<section class="section" id="tecnologias" >
+    <header class="section_header">        
+        <h2 class="title">Tecnologias</h2>
+        <h3 class="paragraph_subtitle">Estas son algunas de las tecnologias que manejo y use en proyectos.</h3>
+    </header>
+    <p>A lo largo del tiempo, y dependiendo del proyecto, tuve enfrentarme y documentarme sobre diferentes tecnologias. 
+        Cada una de ellas, me dejo un conocimiento mas amplio sobre el desarrollo de software, aportando una nueva mirada para solucionar nuevos desafios.
+    </p>
+
+    <!-- Este sería el contenedor para toda tu sección de habilidades -->
+    <ul class="brand_list">
+        {% for tech in site.tecnologies %}
+        <li class="brand_item">
+            <img src="{{ site.baseURL }}/assets/images/tecnologies/{{ tech.filename }}" alt="Logo de {{ tech.name }}">
+            <p>{{ tech.name }}</p>                    
+        </li>
+        {% endfor %}
+    </ul>
+
+</section>

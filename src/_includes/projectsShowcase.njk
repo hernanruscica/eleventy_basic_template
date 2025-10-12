@@ -1,0 +1,33 @@
+<section class="section" id="proyectos" >
+    <header class="section_header">        
+        <h2 class="title">Proyectos</h2>
+        <h3 class="paragraph_subtitle">Lista de mis proyectos más destacados.</h3>
+    </header>
+    <p>Mas abajo les dejo una seleccion de los mas destacados, de a poco agregare mas.</p>
+    {# <a href="/proyectos.html" class="btnCTA">Ver todos</a> #}
+
+    <div class="cards_container">
+        {% set count = 0 %}
+        {% for project in projects.list %}
+            {% if "showcase" in project.tags and count < 3 %}
+                <a href="{{ project.url }}" >           
+                    <article class="card">    
+                        <img src="/assets/images/projects/{{ project.images[0].small }}" class="card_image" alt="Imagen del proyecto {{ project.name }}">
+                        <div class="card_content">
+                            <h3 class="title2">{{ project.name }}</h3>
+                            <p>{{ project.description }}</p>                    
+                            <ul class="tags_list">
+                                {% for tag in project.tags %}
+                                    {% if tag != "showcase" %}
+                                        <li class="tag">{{ tag }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>                
+                    </article>  
+                </a>
+                {% set count = count + 1 %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>

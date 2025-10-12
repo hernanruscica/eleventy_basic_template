@@ -1,0 +1,31 @@
+Presentamos "UrbIA" – La plataforma que transforma la voz de la comunidad en acción 🏙️🔊
+
+Imagina una ciudad donde la información fluye en tiempo real y los ciudadanos pueden ayudarse entre sí. "UrbIA" es una plataforma donde cualquier persona puede reportar incidentes urbanos al instante, simplemente subiendo una foto y comentando con su voz, mientras una IA analiza y genera un reporte detallado.
+
+📍 Características:
+
+Interfaz estilo Waze para reportes comunitarios en tiempo real.
+Inteligencia Artificial para analizar imágenes y audios.
+Mapas interactivos para visualizar y gestionar incidentes.
+Notificaciones inteligentes para alertar a la comunidad sobre eventos en su ciudad.
+
+🎯 Objetivo: Crear una red de ciudadanos informados y conectados, promoviendo seguridad y acción inmediata ante incidentes urbanos. 
+
+Al finalizar el proyecto, actualizare con el enlace del despliegue funcional.
+
+Mi participación en este proyecto fue en el rol de 🎆 Front End 🔝
+Tecnologías utilizadas:
+
+- React + TailwindCSS
+- Shadcn
+- Zustand para gestión de estado.
+- Mapas interactivos con OpenStreetMap.
+
+🎭 Habilidades blandas:
+Fue una experiencia muy enriquecedora. Hubo un gran compromiso desde el inicio, impulsado por la motivación de todo el equipo. 
+Se hizo muchísimo de lo previsto en el MVP. 
+Algo negativo en mi punto de vista fue el mal calculo del tiempo de desarrollo. 
+
+Se aceptaron ideas que sobrepasaban el MVP y no eran necesarias. Esto llevo a que un integrante tenga que estar desarrollando muchísimo mas tiempo que el resto, porque quería y tenia el tiempo. Aclaro que este proyecto no es remunerado, por lo tanto mi prioridad era otra, de todos modos, yo le dedicaba de 3 a 4 horas. 
+
+En fin, la intensidad desmedida no es buena para objetivos reales, este proyecto me termino saturando, porque todos los días había cambios imprevistos, no planificados. Cambios que se deciden entre dos y no están en la planificación.
