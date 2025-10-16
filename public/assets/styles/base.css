@@ -134,7 +134,11 @@ a {
   align-items: center;
   padding: 3rem 2rem;
   gap: 3rem;
-  row-gap: 4rem;
+  row-gap: 3rem;
+}
+
+.section_more_margintop{
+  margin-top: 6em;
 }
 
 .section{
@@ -363,7 +367,7 @@ figure {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   row-gap: 1rem;
   column-gap: 0.5rem;
   margin-top: 2rem;
@@ -681,10 +685,10 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1.5rem;  
+  row-gap: 1.5rem;    
 }
 
-.cv-container{
+.container_main, .cv-container{
   width: 100%;
   max-width: var(--container-width);  
   display: flex;
@@ -814,7 +818,7 @@ textarea {
       }
       p, article {
         width: 100%;      
-        line-height: 1.6rem;     
+        line-height: 1.6em;     
     }
     strong{
       font-weight: 500;
@@ -833,14 +837,34 @@ textarea {
         row-gap: 0rem;
     }    
 
-    .cv-header{     
+    .header, .header-main-content{     
       display: flex;
       flex-direction: row;
       padding: 0;
     }
      .cv-summary, .cv-experience, .cv-education, .cv-skills{      
-      gap: 2rem;     
+      gap: 1rem;     
       width: 100%;       
+    }
+
+    .title {
+      font-size: 18pt;    
+      text-align: start; 
+      padding-bottom: 0.5em; 
+    }
+    .paragraph_subtitle {
+      font-size: 12pt;      
+      padding-bottom: 0;
+      text-align: start; 
+    }
+
+    .navbar{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      row-gap: 0.8em;
+      column-gap: 1.4em;
+      padding: 0;
     }
 
     .link {
@@ -850,6 +874,7 @@ textarea {
         padding: 0;
         
     }
+   
 
     h3 {
       font-size: 11pt;

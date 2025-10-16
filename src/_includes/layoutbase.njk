@@ -6,9 +6,9 @@
     {% endfor %}
   {% endif %}
 </head>
-<body>
-  {% include "header.njk" %}
-  <main>
+<body>  
+  {% include "navBarMain.njk" %} 
+  <main class="container_main">
     {{ content | safe }}
   </main>
   {% include "footer.njk" %}

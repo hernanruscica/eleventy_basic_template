@@ -8,13 +8,18 @@
         <img class="copyright_image" src="/assets/images/by-sa.svg" alt="Logo de la licencia Creative Commons BY-SA" title="Creative Commons BY-SA"> 
         <p>
             Distribuido en mi GitHub, bajo la licencia de https://creativecommons.org/licenses/by-sa/3.0/igo/</br>
-            Iconos de <a href="https://lucide.dev/">lucide</a> Bajo licencia MIT.
+            Se permite compartir y adaptar, siempre que se otorgue el crédito correspondiente y se distribuya bajo la misma licencia.</br>
+            <a href="https://github.com/hernanruscica/eleventy_basic_template" target="_blank" rel="noopener noreferrer">Repositorio</a>
         </p>
-        <a href="https://www.flaticon.com/free-icons/project" title="project icons">Project icons created by Nhor Phai - Flaticon</a>      
+        <p>
+            Iconos de <a href="https://lucide.dev/">lucide</a> Bajo licencia MIT.</br>
+            <a href="https://www.flaticon.com/free-icons/project" title="project icons">Project icons created by Nhor Phai - Flaticon</a>      
+        </p>
     </div>
     <div class="footer_contact">            
         <h3 class="title2">Contacto</h3>
-        {% include "socialNavBar.njk" %}        
+        {% set headerItems = site.socials %}
+        {% include "headerNavBar.njk" %}
     </div>
     <div class="floating-buttons">
         <a href="#" class="scroll-to-top-button" aria-label="Ir arriba" title="Ir arriba">

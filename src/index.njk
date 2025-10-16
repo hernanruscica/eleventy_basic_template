@@ -13,7 +13,12 @@ summary:
     - href: "#contacto"
       text: "contacto"
 ---
-
+{% set headerDescription = '<p>' + site.author.bio + '</p>' %}
+{% set headerTitle = site.author.name %}
+{% set headerSubtitle = site.author.title %}
+{% set headerImg = site.baseURL + "/assets/images/" + site.author.photo %}
+{% set headerItems = site.socials %}
+{% include "header.njk" %}
 {% include "indexSummary.njk" %}
 {% include "projectsShowcase.njk" %}
 {% include "skills.njk" %}

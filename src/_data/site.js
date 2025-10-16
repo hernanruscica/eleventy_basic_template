@@ -25,19 +25,46 @@ export default {
             text: "Perfil en GitHub",
             url: "https://github.com/usuario",
             icon: "github.svg"
+        },    
+        {   
+            name: "cv",         
+            text: "ver CV",
+            url: "/cv",
+            icon: "fileText.svg"
+        },         
+    ],
+    cvContacsLinks: [
+        {   
+            name: "linkedin",         
+            text: "https://www.linkedin.com/in/usuario/",
+            url: "https://www.linkedin.com/in/usuario/",
+            icon: "linkedin.svg"
+        }, 
+        {   
+            name: "phone",         
+            text: "+1234567890",
+            url: "+1234567890",
+            icon: "phone.svg"
+        }, 
+        {   
+            name: "email",         
+            text: "usuario@ejemplo.com",
+            url: "usuario@ejemplo.com",
+            icon: "envelope.svg"
         },  
         {   
             name: "website",         
-            text: "Sitio web",
+            text: "https://ejemplo.com",
             url: "https://ejemplo.com",
             icon: "globe.svg"
         },  
-    ],
+    ],        
+
     author: {
         name: "Nombre Apellido",
         title: "Título Profesional",
-        photo: "profile.webp",
-        bio: "Una breve biografía sobre ti.",
+        photo: "default_user.png",
+        bio: "Una breve biografía sobre YOU.",
         url: "https://ejemplo.com",
         githubLink: "https://github.com/githubusername",
         linkedinLink: "https://www.linkedin.com/in/linkedinusername/",

@@ -1,24 +1,14 @@
 ---
-layout: layoutcv
+layout: layoutbase
 ---
-
-  <header class="cv-header">
-      <figure class="profile_image">
-          <img src="{{ site.baseURL }}/assets/images/{{ site.author.photo }}" alt="Una fotografía profesional de {{ site.author.name }}" title="Una fotografía profesional de {{ site.author.name }}">
-      </figure>                
-      <div class="cv-header-content">
-        <h1> {{ site.author.name }} </h1>
-        <ul class="contact-info">
-            <li> {{ site.author.address }} </li>
-            <li><a href="{{ site.socials[1].url }}" class="link" target="_blank" rel="noopener noreferrer">{{ site.socials[1].url }}</a></li>
-            <li><a href="tel:{{ site.author.telephone }}"  class="link" >{{ site.author.telephone }}</a></li>
-            <li><a href="mailto:{{ site.author.email }}"  class="link" >{{ site.author.email }}</a></li>
-            <li><a href="{{ site.url }}"  class="link"  target="_blank" rel="noopener noreferrer">{{ site.url }}</a></li>                  
-            <a href="bajar" id="download-cv" class="btnCTA no-print">Descargar CV</a>  
-            <p class="paragraph_subtitle no-print" >[CTRL+P] para imprimir o descargar.</p>
-        </ul>
-      </div>
-  </header> 
+{% set headerDescription = "<a href='bajar' id='download-cv' class='btnCTA no-print'>Descargar CV</a>
+                            <p class='paragraph_subtitle no-print' >[CTRL+P] para imprimir o descargar.</p> " %}
+{% set headerTitle = site.author.name %}
+{% set headerSubtitle = site.author.title %}
+{% set headerImg = site.baseURL + "/assets/images/" + site.author.photo %}
+{% set headerItems = site.cvContacsLinks %}
+{% set headerNavBar = "headerNavBar.njk" %}
+{% include "header.njk" %}  
 
   <section class="cv-summary">
     <h2>Perfil</h2>

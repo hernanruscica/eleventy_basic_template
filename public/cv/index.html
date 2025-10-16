@@ -37,61 +37,93 @@
   <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
- <link rel="stylesheet" href="/assets/styles/base.css?v=1760291711012">
+ <link rel="stylesheet" href="/assets/styles/base.css?v=1760574570066">
 
 
   
 </head>
 <body>  
-  <!-- header starts -->    
-<header class="header no-print">
-    <!-- main nav starts -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="/" class="link"> Nombre Apellido</a>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <img src="http://localhost:7777/assets/icons/hamburguer.svg" class="icon-open" alt="Abrir menú">
-                <img src="http://localhost:7777/assets/icons/squarex.svg" class="icon-close" alt="Cerrar menú">
-            </button>
-            <ul class="nav-links">
-                
-                    <li class="link">
-                        <a href="/" class="links">Inicio</a>
-                    </li>
-                
-                    <li class="link">
-                        <a href="/proyectos" class="links">Proyectos</a>
-                    </li>
-                
-                    <li class="link">
-                        <a href="/cv" class="links">Curriculum Vitae</a>
-                    </li>
-                  
-            </ul>
+  <!-- navBarMain starts -->
+<nav class="main-nav no-print">
+    <div class="nav-container">
+        <a href="/" class="link">Nombre Apellido</a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <img src="http://localhost:7777/assets/icons/hamburguer.svg" class="icon-open" alt="Abrir menú">
+            <img src="http://localhost:7777/assets/icons/squarex.svg" class="icon-close" alt="Cerrar menú">
+        </button>
+        <ul class="nav-links">
+            
+                <li class="link">
+                    <a href="/" class="links">Inicio</a>
+                </li>
+            
+                <li class="link">
+                    <a href="/proyectos" class="links">Proyectos</a>
+                </li>
+            
+                <li class="link">
+                    <a href="/cv" class="links">Curriculum Vitae</a>
+                </li>
+              
+        </ul>
+    </div>
+</nav> 
+<!-- navBarMain ends -->  
+  <main class="container_main">
+    
+
+
+
+
+
+<!-- header starts -->    
+<header class="header">    
+    <div class="header-main-content">
+        <figure class="profile_image">
+            <img src="http://localhost:7777/assets/images/default_user.png" 
+                alt="Una fotografía profesional de Nombre Apellido" 
+                title="Una fotografía profesional de Nombre Apellido">
+        </figure>
+        <div class="header_contenido">
+            <h1 class="title">Nombre Apellido</h1>           
+            <h2  class="paragraph_subtitle">
+                Título Profesional
+            </h2>
+            <!-- header nav bar  starts -->
+<address>
+    <ul class="navbar"><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://www.linkedin.com/in/usuario/" >
+                https://www.linkedin.com/in/usuario/
+            </a>
+        </li><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            <a href="+1234567890" >
+                +1234567890
+            </a>
+        </li><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            <a href="usuario@ejemplo.com" >
+                usuario@ejemplo.com
+            </a>
+        </li><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <a href="https://ejemplo.com" >
+                https://ejemplo.com
+            </a>
+        </li></ul>
+</address>
+<!-- header nav bar ends -->
+
+            
+            <a href='bajar' id='download-cv' class='btnCTA no-print'>Descargar CV</a>
+                            <p class='paragraph_subtitle no-print' >[CTRL+P] para imprimir o descargar.</p>             
+
         </div>
-    </nav>    
-        
+    </div>        
 </header>
 <!-- header ends -->
-  <main class="cv-container">
-    
-  <header class="cv-header">
-      <figure class="profile_image">
-          <img src="http://localhost:7777/assets/images/profile.webp" alt="Una fotografía profesional de Nombre Apellido" title="Una fotografía profesional de Nombre Apellido">
-      </figure>                
-      <div class="cv-header-content">
-        <h1> Nombre Apellido </h1>
-        <ul class="contact-info">
-            <li> Ciudad, País </li>
-            <li><a href="https://www.linkedin.com/in/usuario/" class="link" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/usuario/</a></li>
-            <li><a href="tel:+1234567890"  class="link" >+1234567890</a></li>
-            <li><a href="mailto:usuario@ejemplo.com"  class="link" >usuario@ejemplo.com</a></li>
-            <li><a href="https://ejemplo.com"  class="link"  target="_blank" rel="noopener noreferrer">https://ejemplo.com</a></li>                  
-            <a href="bajar" id="download-cv" class="btnCTA no-print">Descargar CV</a>  
-            <p class="paragraph_subtitle no-print" >[CTRL+P] para imprimir o descargar.</p>
-        </ul>
-      </div>
-  </header> 
+  
 
   <section class="cv-summary">
     <h2>Perfil</h2>
@@ -295,46 +327,43 @@
         <img class="copyright_image" src="/assets/images/by-sa.svg" alt="Logo de la licencia Creative Commons BY-SA" title="Creative Commons BY-SA"> 
         <p>
             Distribuido en mi GitHub, bajo la licencia de https://creativecommons.org/licenses/by-sa/3.0/igo/</br>
-            Iconos de <a href="https://lucide.dev/">lucide</a> Bajo licencia MIT.
+            Se permite compartir y adaptar, siempre que se otorgue el crédito correspondiente y se distribuya bajo la misma licencia.</br>
+            <a href="https://github.com/hernanruscica/eleventy_basic_template" target="_blank" rel="noopener noreferrer">Repositorio</a>
         </p>
-        <a href="https://www.flaticon.com/free-icons/project" title="project icons">Project icons created by Nhor Phai - Flaticon</a>      
+        <p>
+            Iconos de <a href="https://lucide.dev/">lucide</a> Bajo licencia MIT.</br>
+            <a href="https://www.flaticon.com/free-icons/project" title="project icons">Project icons created by Nhor Phai - Flaticon</a>      
+        </p>
     </div>
     <div class="footer_contact">            
         <h3 class="title2">Contacto</h3>
-        <!-- Social Media Links -->
+        
+        <!-- header nav bar  starts -->
 <address>
-    <ul class="navbar">
-        <li class="link link_icon_2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link_icon"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-            <a href="mailto:usuario@ejemplo.com" >
-                Correo
+    <ul class="navbar"><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            <a href="usuario@ejemplo.com" >
+                Correo electronico
             </a>
-        </li>
-
-
-        <li class="link link_icon_2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link_icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-            <a href="https://github.com/githubusername" target="_blank" rel="noopener noreferrer">                            
-                GitHub
+        </li><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://www.linkedin.com/in/usuario/" >
+                Perfil de LinkedIn
             </a>
-        </li>
-
-
-        <li class="link link_icon_2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link_icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-            <a href="https://www.linkedin.com/in/linkedinusername/" target="_blank" rel="noopener noreferrer">
-                LinkedIn
+        </li><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <a href="https://github.com/usuario" >
+                Perfil en GitHub
             </a>
-        </li>
-        <li class="link link_icon_2">            
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-            <a href="/cv">
-                Ver C.V.
+        </li><li class="link link_icon_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  stroke="currentColor"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+            <a href="/cv" >
+                ver CV
             </a>
-        </li>
-    </ul>
+        </li></ul>
 </address>
-<!-- Social Media Links ends -->        
+<!-- header nav bar ends -->
+
     </div>
     <div class="floating-buttons">
         <a href="#" class="scroll-to-top-button" aria-label="Ir arriba" title="Ir arriba">
@@ -345,6 +374,7 @@
         </a>        
     </div>    
 </footer>
+
   
   <script src="/assets/scripts/main.js"></script>
   <script src="/assets/scripts/form.js"></script>

@@ -1,0 +1,14 @@
+<!-- header nav bar  starts -->
+<address>
+    <ul class="navbar">
+    {%- for item in headerItems -%}
+        <li class="link link_icon_2">
+            {% svg item.icon %}
+            <a href="{{ item.url }}" >
+                {{ item.text }}
+            </a>
+        </li>
+    {%- endfor -%}
+    </ul>
+</address>
+<!-- header nav bar ends -->
