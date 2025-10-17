@@ -1,5 +1,7 @@
 {% include "head.njk" %}
-
+{# podrias cargar estilos o scripts adicionales desde un array llamado styles o scripts en la cabecera del archivo que use esta plantilla 
+  You could load additional styles or scripts from an array called styles or scripts in the header of the file that uses this template
+#}
   {% if styles %}
     {% for css in styles %}
       <link rel="stylesheet" href="{{ site.baseURL }}/assets/styles/{{ css }}.css">
@@ -14,7 +16,11 @@
   {% include "footer.njk" %}
   
   <script src="/assets/scripts/main.js"></script>
-  <script src="/assets/scripts/form.js"></script>
+  {% if scripts %}
+    {% for js in scripts %}
+      <script src="/assets/scripts/{{ js }}.js"></script>
+    {% endfor %}
+  {% endif %}  
   
 </body>
 </html>

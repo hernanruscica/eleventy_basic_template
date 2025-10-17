@@ -701,7 +701,7 @@ textarea {
 .cv-header, .cv-summary, .cv-experience, .cv-education, .cv-skills{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: start;    
   gap: 2rem;
   width: 100%;
