@@ -60,12 +60,22 @@
 
 /* Root Variables */
 :root {
-  --primary-color: #0D1D10;
-  --secondary-color: #FFFFEF;
+  /* Light Mode (Default) */
+  --primary-color: #0D1D10; /* Texto oscuro */
+  --secondary-color: #FFFFEF; /* Fondo claro */
   --CTA: #3A7D44;
   --accent-color: #DF6D14;
   --accent-color-transparent: rgba(223, 109, 20, 0.1);
   --container-width: 80rem;
+}
+
+.dark-mode {
+  /* Dark Mode */
+  --primary-color: #FFFFEF; /* Texto claro */
+  --secondary-color: #0D1D10; /* Fondo oscuro */
+  --CTA: #6CBF84; /* Un CTA que contraste en oscuro */
+  --accent-color: #F0A500; /* Un acento que contraste en oscuro */
+  --accent-color-transparent: rgba(240, 165, 0, 0.2);
 }
 
 html {
@@ -86,6 +96,11 @@ body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   -webkit-font-smoothing: antialiased;
+}
+
+html.dark-mode body {
+  background-color: var(--secondary-color); /* Should be dark background */
+  color: var(--primary-color); /* Should be light text */
 }
 
 img,
@@ -282,7 +297,7 @@ figure {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   border: solid 1px #ddd;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -329,7 +344,7 @@ figure {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   border-top: solid 1px #ddd;
   border-bottom: solid 1px #ddd;
   border-right: solid 1px #ddd;
@@ -477,7 +492,7 @@ textarea {
   align-items: start;
   justify-content: center;
   padding: 4rem 2rem;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-color);
   row-gap: 3rem;
   border-top: solid 4px var(--accent-color);
@@ -548,8 +563,10 @@ textarea {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  color: var(--primary-color);
   padding: 0.8rem;
 }
+
 
 .nav-toggle img {
   width: 30px;
@@ -566,6 +583,28 @@ textarea {
 
 .nav-toggle.active .icon-close {
   display: block;
+}
+
+.light-mode-text, .dark-mode-text {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  font-weight: 700;
+  svg{
+    width: 24px;
+    height: 24px;
+  }
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
+.light-mode-text{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.dark-mode-text{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .hamburger {
@@ -679,6 +718,7 @@ textarea {
 
 .scroll-to-top-button.visible {
   display: flex;
+  background-color: rgba(255, 255, 255, 0.6);  
 }
 
 .section_header, .cv_header{
